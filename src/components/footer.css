@@ -1,0 +1,145 @@
+.footer {
+  background-color: #fc5a55;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand .logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-link {
+  font-size: 20px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #00d1ff;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #00d1ff;
+}
+
+.footer-link {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00d1ff;
+  color: #fafafa;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.go-top:hover {
+  background-color: #ffffff;
+  color: #00d1ff;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-brand img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .link-title {
+    font-size: 1rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .social-link {
+    font-size: 1.3rem;
+  }
+}

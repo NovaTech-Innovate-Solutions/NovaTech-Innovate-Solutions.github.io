@@ -1,0 +1,93 @@
+/* CAREER PAGE */
+
+.career {
+  padding: 120px 0;
+}
+
+.career-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.career-perks {
+  margin-bottom: 100px;
+}
+
+.career-perk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.career-perk-list li {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.career-perk-list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.15);
+}
+
+.career-perk-list ion-icon {
+  font-size: 36px;
+  color: var(--bittersweet);
+  margin-bottom: 15px;
+}
+
+.career-openings {
+  margin-bottom: 100px;
+}
+
+.job-list {
+  display: grid;
+  gap: 30px;
+}
+
+.job-card {
+  background: var(--white-2);
+  padding: 30px;
+  border-left: 5px solid var(--bittersweet);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.1);
+}
+
+.job-type {
+  color: var(--rythm);
+  font-size: var(--fs-6);
+  margin: 8px 0;
+}
+
+.job-desc {
+  font-size: var(--fs-5);
+  margin-bottom: 20px;
+  color: var(--davys-gray);
+}
+
+.career-form-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.career-form {
+  margin-top: 40px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.career-form .input-wrapper {
+  margin-bottom: 25px;
+  text-align: left;
+}

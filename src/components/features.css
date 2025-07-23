@@ -1,0 +1,124 @@
+
+
+/* Features List - Grid */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* space between items */
+  padding: 0;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+
+.features-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.25);
+}
+
+/* Image in each feature */
+.features-item-banner img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.1));
+}
+
+/* Title and text inside feature */
+.feature-item-content {
+  text-align: center;
+}
+
+.item-title {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.item-text {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* CEO Message Section */
+.ceo-section {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 25px var(--shadow-color);
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.ceo-section .section-title {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+/* CEO message layout */
+.ceo-message {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* CEO image */
+.ceo-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
+  flex-shrink: 0;
+}
+
+/* CEO text */
+.ceo-text {
+  flex: 1;
+  min-width: 180px;
+  font-size: 1rem;
+  color: #374151; /* Gray-800 */
+  line-height: 1.6;
+}
+
+.ceo-text h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.ceo-text p {
+  margin-bottom: 1rem;
+}
+
+/* Strong message styling */
+.ceo-text p strong {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .features-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .ceo-message {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-text {
+    min-width: auto;
+  }
+}
